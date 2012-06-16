@@ -6,7 +6,7 @@ require 'open-uri'
 doc = Nokogiri::HTML(open(ARGV[0]))
 Title 	= Array.new(doc.css('head title'))
 title = Title[0].content.partition(" - ")[0]
-dir = title.gsub("Mangateers > ", "").gsub(" > ", "_").tr(" ", "_")
+dir = title.gsub("Mangateers > ", "").gsub(" > ", "_").tr(" ", "_").tr("(","").tr(")","")
 Pages 	= Array.new(doc.css('#viewer-nav a'))
 print "Downloading " + title
 puts `mkdir #{dir}`
