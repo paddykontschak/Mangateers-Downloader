@@ -28,6 +28,7 @@ Pages[10..-2].each do |item|
 	print "File #{current}/#{total_page}"
 	puts `wget -q -c -P #{dir} #{img} -O #{dir}/#{current}.png`
 end
-print `zip #{dir}.zip #{dir}/`
+print `tar -cf #{dir}.tar #{dir}/`
+print `bzip2 -z #{dir}.tar`
 print `rm -rf #{dir}`
-puts "Done, Saved to \"#{dir}.zip\" "
+puts "Done, Saved to \"#{dir}.tar.bz2\" "
