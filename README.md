@@ -1,7 +1,7 @@
 Mangateers-Downloader
 ===
 
-Mangateers has been broken for a few months now. This app is therefore useless as of this moment.
+Mangateers has been broken for a few months now. This program is therefore useless.
 ===
 ---
 
