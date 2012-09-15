@@ -1,5 +1,9 @@
 Mangateers-Downloader
-=====================
+===
+
+Mangateers has been broken for a few months now. This app is therefore useless as of this moment.
+===
+---
 
 Mangateers downloader based on [dwiash/msdl](https://github.com/dwiash/msdl), written in Ruby (Unix only).
 
